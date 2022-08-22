@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+    <link rel="stylesheet" href="css/sigup.css">
+</head>
+
+<body>
+    <div class="left-box">
+        <div class="signupFrm">
+            <form action="" class="form">
+                <h1 class="title">Sign up</h1>
+
+                <div class="inputContainer">
+                    <input type="text" class="input" placeholder="a">
+                    <label for="" class="label">Email</label>
+                </div>
+
+                <div class="inputContainer">
+                    <input type="text" class="input" placeholder="a">
+                    <label for="" class="label">Username</label>
+                </div>
+
+                <div class="inputContainer">
+                    <input type="password" name="pswd1" class="input" placeholder="a">
+                    <label for="" class="label">Password</label>
+                </div>
+
+                <div class="inputContainer">
+                    <input type="password" name="pswd2" class="input" placeholder="a">
+                    <label for="" class="label">Confirm Password</label>
+                </div>
+                <div class="link">
+                    <p>Already have an account? <a href="login.html">Log-In Here</a></p>
+                </div>
+
+                <input type="submit" class="submitBtn" value="Sign up" onclick="matchPassword()">
+            </form>
+        </div>
+
+    </div>
+    <div class="right-box">
+        <div class="textarea">
+            <div class="sidetext">
+                <p></p><img src="images\signup\signup.png" alt="Sign-Here">
+                Step 1: Sign Up here to get started with for expiriencing wide range of products. </p>
+            </div>
+            <div class="sidetext">
+                <p></p><img src="images\signup\desktop.png" alt="Browse-Here">
+                Step 2: Browse and choose from the wide range of electronic appliances provided. </p>
+            </div>
+            <div class="sidetext">
+                <p></p><img src="images\signup\shopping cart.png" alt="Shop-Here">
+                Step 3: Add the chosen items to the cart and proceed to purchase.</p>
+            </div>
+        </div>
+    </div>
+    <script>  
+        function matchPassword() {  
+          var pw1 = document.getElementById("pswd1");  
+          var pw2 = document.getElementById("pswd2");  
+          if(pw1 != pw2){   
+            alert("Passwords did not match");  
+          } 
+          else {  
+            alert("Password created successfully");  
+          }  
+        }  
+        </script>  
+</body>
+
+</html>
